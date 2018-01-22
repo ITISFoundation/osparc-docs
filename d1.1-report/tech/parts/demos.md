@@ -16,5 +16,3 @@ This demonstration builds a web application that offers the entire [Sim4Life](ht
 
 
 **NOTE**: These three demonstrations were presented live during the meeting with the SPARC Subject Matter Experts on December 13, 2017.
-
-TODO Conclusions on tech review
