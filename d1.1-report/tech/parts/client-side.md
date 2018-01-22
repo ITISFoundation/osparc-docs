@@ -122,7 +122,7 @@ The main difference between vue, react and qooxdoo is that the first two provide
 
 ### Recommendations
 Based on our analysis and the framework-maturity, we believe that [vue] should be discarded.
-We think that both [react] and [qooxdoo], could work, but taking into the popularity and support the community can provide, our recommendation is to use [react].
+We think that both [react] and [qooxdoo], could work, but taking into account the popularity and support the community can provide, our recommendation is to use [react].
 
 
 
