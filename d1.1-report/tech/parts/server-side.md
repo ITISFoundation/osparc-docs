@@ -1,6 +1,6 @@
 ## Frameworks
 
-At the back-end, the server-side of the web application while for the back-end (web server-side) the following web-frameworks were pre-selected: [express] in node.js, [flask]/[sanic] in python and [wt] in C++.
+For the back-end, the server-side of the web application, the following web-frameworks were pre-selected for review: [express] in node.js, [flask]/[sanic] in python and [wt] in C++.
 
 All these web-frameworks provide standard features (included or within packages) for:
 
@@ -26,12 +26,13 @@ Most of the points below are highlights useful for the discussion in the context
     - Same language as in client side
   - *Functionality*:
     - Large amount of packages for virtually everything!
-    - npm proofs to be state-of-the-art managing dependencies but its complexity makes it very difficult (for non-experts) to track and solve errors.
+    - npm proofs to be state-of-the-art managing dependencies
     - TODO review ongoing
 
 **Cons:**
 
   - Difficult to integrate python/C++ code (only via other processes)
+  - npm complexity makes it very difficult (for non-experts) to track and solve errors
   - TODO review ongoing
 
 
@@ -67,18 +68,11 @@ Most of the points below are highlights useful for the discussion in the context
 **Cons:**
 
 - First trials shows a high level of communication with the server  
-- Needs some heavy-lifting to get it up & running in container (c++ libs, build, ...)  
+- Needs some heavy-lifting to get it up and running in container (c++ libs, build, ...)  
 - TODO review ongoing  
 
 ## Conclusions
-Currently these are our recommendation of a web-framework (in order):
-
-1. [flask]/[sanic]: preferred to develop the framework
-1. [express]: as prototype/mockup servers
-1. [wt] : keep an eye
-
-
-
+Based on our review, we think that the web-framework should be developed using [flask]/[sanic]. [express] could be used as prototype with/for mockup servers. Although we don’t at this moment recommend the use of [wt], it may be worth it to keep an eye on it. 
 
 [express]: http://expressjs.com/
 [flask]: http://flask.pocoo.org/
