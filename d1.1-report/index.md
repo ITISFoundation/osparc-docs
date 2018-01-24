@@ -43,7 +43,7 @@ document. After presenting the [requirement gathering approach and
 effort](./reqs/methodology.md), the [obtained information is
 summarized](./reqs/results.md), and [conclusions](./reqs/conclusions.md)
 are drawn. The [technology evaluation approach and
-activities](./tech/intro.md) are introduced, [results](./tech/parts.md)
+activities](./tech/intro.md) are introduced, [results](./tech/intro.md)
 are presented, and  [conclusions](./tech/conclusion.md) are reached. From
 this, [high level platform functionality specifications](./specs/high-
 level.md) and [framework architecture specifications](./specs/low-
