@@ -1,16 +1,17 @@
+
 - **User Interface**: The user interface shall primarily be a browser-
 based GUI. It shall be user-friendly and interactive. It shall support
 interface elements that permit setting parameters and properties,
 visualizing 3D scenes, displaying data (tables, plots, trees, image-data,
-etc.) and messages, setting up and displaying work-flows (“workbench”),
+etc.) and messages, setting up and displaying work-flows ("workbench"),
 monitoring and administering computational resources, as well as
 accessing and managing data (local data and data in the DAT-CORE). With
-lower priority, the user interface should also offer a scripting
-interface (Python-based). Through the GUI, users shall be able to access
-data and models (including search functionality), manage access rights,
-set up studies and workflows, execute and monitor services locally and in
-the cloud, as well as perform analysis and post-processing. Xxx
-workbench/flowchart editor xxx
+lower priority and/or at a later stage, the user interface should also
+offer a scripting interface (Python-based). Through the GUI, users shall
+be able to access data and models (including search functionality),
+manage access rights, set up studies and workflows, execute and monitor
+services locally and in the cloud, as well as perform analysis and post-
+processing. Xxx workbench/flowchart editor xxx
 - **Services Infrastructure**: Service environments that make it easy to
 run Python scripts, to run executables (Unix-based operating systems,
 such as Linux, are currently the only platforms used by contacted SPARC
@@ -19,26 +20,27 @@ the command line or standardized input file formats, to compile and
 execute C, C++, and Java code, to execute R scripts, and xxx shall be
 provided. It shall be easy for users to register new services by using
 one of the predefined service environments and inserting their
-executables/code/… and it must be simple to specify the required input
+executables/code/... and it must be simple to specify the required input
 parameters such that they are exposed through the online GUI. By
 providing information about the generated output, it shall be possible to
 present the output using standardized viewers (plots, 3D views, slice
-field views, isosurface views…). It shall be possible to link services
+field views, isosurface views...). It shall be possible to link services
 with compatible outputs and inputs into pipelines. Advanced users shall
 have the possibility of creating services that manage dedicated sections
 of the online GUI, allowing them superior control also over visualization
 and interaction. When executing a service, all the information required
-to reproduce the execution (input data, parameters, version of service…)
+to reproduce the execution (input data, parameters, version of service...)
 shall be stored, to facilitate reproduction.
 - **Specialized Services**: A range of commonly required services shall
 be provided. On the physics solver side, this includes primarily
 electromagnetic exposure. Typically, the most required variant of
 electromagnetic solver is an electroquasistatic solver (for exposure
-through electrodes) with support for anisotropic electrical conductivity
-(to handle the important impact of anisotropic neural tissue). Another
-relevant electromagnetic solver is the magnetoquasistatic solver (for
-exposure by coils and loops). Selected teams will also require acoustic
-propagation, biomechanics, optics, and tissue damage solvers. The
+through electrodes) xxx with support for anisotropic electrical
+conductivity (to handle the important impact of anisotropic neural
+tissue) xxx. Another relevant electromagnetic solver is the
+magnetoquasistatic solver (for exposure by coils and loops). Selected
+teams will also require acoustic propagation, biomechanics, optics, and
+tissue damage solvers (not all of these can be provided by IT'IS). The
 platform must support either the import of discretized models (meshes,
 voxels), or provide discretization services (voxeler, mesher), or both.
 On the electrophysiological modeling side, the most commonly required
@@ -57,30 +59,33 @@ to find optimal stimulation parameters (currents, pulse-shapes) for
 multi-contact electrodes that produce selective stimulation of fibers is
 required. A Python service with libraries such as numpy, scipy,
 pyplot/plotly that provide users with analysis and post processing
-functionalities akin to Matlab shall be offered (Xxx Supporting Matlab
-within a dedicated service could be problematic at the current time, due
-to licensing issues in combination with Docker technology. Octave could
-be a highly compatible alternative and Python with suitable extensions
-also provides similar functionality to Matlab xxx.). The creation of a
-SBML/CellML service to support the MAP-CORE vision is desirable. A
-coupling service shall allow setups involving more advanced execution
-schemes and data exchange than simple pipelining, within the limitations
-imposed by latency and bandwidth. This shall include iterative coupling
-and bidirectional coupling. A service allowing (ontological) annotation
-of anatomical and physiological models will be provided by the MAP-CORE.
-- **Models**: The platform shall offer anatomical models of human (man
-and woman) and rodents (xxx). Further anatomical models that shall be
-considered at a later point include xxx. The anatomical models shall be
-pre-functionalized with the trajectories of major peripheral nerves.
-Through a service, it shall be possible to obtain for simulation purposes
-discretized representation of the models or sub-regions thereof. It shall
-be possible to register additional layers of information relative to the
-anatomical models. These include measurement and simulation data, image
-data, nerve trajectories, anatomical detail, device models, as well as
-electrophysiological models.
+functionalities akin to Matlab shall be offered (Supporting Matlab within
+a dedicated service could be problematic at the current time, due to
+licensing issues in combination with Docker technology. Octave could be a
+highly compatible alternative and Python with suitable extensions also
+provides similar functionality to Matlab.). The creation of a SBML/CellML
+service to support the MAP-CORE vision is desirable. A coupling service
+shall allow setups involving more advanced execution schemes and data
+exchange than simple pipelining, within the limitations imposed by
+latency and bandwidth. This shall include iterative coupling and
+bidirectional coupling. A service allowing (ontological) annotation of
+anatomical and physiological models will be provided by the MAP-CORE.
+- **Models**: The platform shall offer anatomical models of humans (man
+and woman) and rat. We choose a rat because rats were most popular in the
+vote conducted via Slack, and because it is anticipated that imaging rats
+and identifying selected peripheral nerves will be easier for rats than
+mice, because of their size, resulting in superior model quality. Further
+animal models that shall be considered at a later point include mice,
+cats and a monkey. The anatomical models shall be pre-functionalized with
+the trajectories of major peripheral nerves. Through a service, it shall
+be possible to obtain for simulation purposes discretized representation
+of the models or sub-regions thereof. It shall be possible to register
+additional layers of information relative to the anatomical models. These
+include measurement and simulation data, image data, nerve trajectories,
+anatomical detail, device models, as well as electrophysiological models.
 - **Computational Infrastructure**: The platform shall initially run on
-hardware localized at IT’IS. Subsequently, the platform shall run on the
-Amazon cloud and be flexibly scalable, depending on user demand. It
+HPC hardware localized at IT'IS. Subsequently, the platform shall run on
+the Amazon cloud and be flexibly scalable, depending on user demand. It
 should be considered to add support for execution of selected services
 (e.g., NEURON simulations) on dedicated high-performance computing
 resources (e.g., NSG portal).
@@ -99,3 +104,4 @@ documentation and validation data), ontological descriptors, or quality
 certification. It shall be possible to relate data to points or regions
 within specific anatomical models. Data shall be referenceable (unique
 identifier, linkable) and traceable (origin of data, versions).
+
