@@ -1,3 +1,4 @@
+
 - **Computational resources** : All teams stated that initial
 computational resource needs will be moderate, with existing SPARC
 related models currently running on simple desktop machines. Typically,
@@ -5,9 +6,9 @@ only few people will initially perform modeling and not many simulations
 will have to run in parallel. However, in the longer term, parameter
 sweeps, optimizations (primarily of stimulation parameters and
 configurations), simulations with large number of neurons/cells, and
-simulations covering large simulated time periods are planned. For that
+simulations covering large (simulated) time periods are planned. For that
 purpose, support for high performance computing resources has been
-requested, with the [NSGportal](https://www.nsgportal.org/) mentioned
+requested, with the NSGportal (https://www.nsgportal.org/) mentioned
 specifically as a potential resource worth supporting. One team will
 require supercomputing functionality that is beyond what SPARC can
 provide. Teams foresee increasing over time the number of people working
@@ -30,14 +31,14 @@ for thin layers and anisotropy in the electromagnetic modeling is seen as
 a must. For thermal modeling, consideration of perfusion and
 thermoregulation effects is fundamental. Stimulation can be local or
 remote, and thus exposure and propagation needs to be modeled on macro-
-and micro-anatomical levels. A few teams consider adding biomechanical
-models in the future.
+and micro-anatomical levels. A few teams consider adding own
+biomechanical models in the future.
 - **Physiological modeling** : Physiological modeling will include body
 physiology, organ physiology, and peripheral nervous system (PNS)
 electrophysiology models. In addition, modeling of tissue evolution
 (damage, interface effects) is planned. Organ models are most frequently
 realized as coupled ordinary differential equations (ODEs) of actors
-(cells, neurons…), but can also be finite element-type partial
+(cells, neurons...), but can also be finite element-type partial
 differential equation (PDE) models or even black-box models without known
 equations (e.g., extracted through machine learning). PNS models include
 compartmental/cable-equation-type models, connection strength models
@@ -48,7 +49,7 @@ activity and field distributions. Support for different types of
 myelinated and unmyelinated fibers is requested. Both, simplified and
 morphologically detailed neurons must be supported. NEURON developed by
 Yale University is the only software commonly used by the contacted teams
-for nerve electrophysiological modeling. Other software packages, such
+for nerve electrophysiological modelling. Other software packages, such
 as NetPy, are used by single groups. Support for coupling NEURON models
 with spatio-temporally varying electromagnetic, acoustic, and thermal
 exposure has been requested. Computing compound action potentials would
@@ -106,8 +107,8 @@ desirable.
 multiple teams would be interested in using microscopy images to generate
 nerve microstructure models. Image processing is used by the SPARC
 awardees for various tasks (video analysis, calcium expression, neuron
-morphology reconstruction…), but for those tasks the teams will continue
-using their established tools (ImageJ, Imaris, Neurolucida…). One team
+morphology reconstruction...), but for those tasks the teams will continue
+using their established tools (ImageJ, Imaris, Neurolucida...). One team
 expressed willingness to share self-developed video analysis
 functionality in the form of a SIM-CORE service, but it is unclear if
 other parties would be interested in such functionality. Only one team
@@ -122,7 +123,7 @@ loop control) and model order reduction functionality.
 previously performed studies is judged important, as well as ways of
 assessing the degree of model validation.
 - **Support** : Most teams have requested extensive support with model
-development (“What should we measure to create a model?”), in moving
+development ("What should we measure to create a model?"), in moving
 existing models to the platform, and with platform use (training events,
 contactable support team).
 - **File formats** : File format standards exist for electrophysiological
@@ -153,3 +154,4 @@ within the online platform would be valued.
 - **Privacy** : The contacted teams do not foresee privacy issues related
 to the data or images that they require in the context of computational
 modeling.
+
