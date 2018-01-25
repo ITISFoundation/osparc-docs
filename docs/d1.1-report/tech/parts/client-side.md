@@ -7,8 +7,7 @@ browser on the client-side, which interprets and executes them. The
 front-end interacts directly with the user and for that reason one of
 main features of front-end frameworks is the Graphical User Interface
 (GUI). Among the wide variety of frameworks that support the development
-of front-ends we pre-selected: [vue], [react], [qooxdoo] and [wt] for
-further review.
+of front-ends we pre-selected: [vue], [react] and [qooxdoo].
 
 In order to compare advantages and disadvantages of the different
 frameworks, prototype Single-Page-Applications were built for each
@@ -20,9 +19,9 @@ The following components/aspects were reviewed:
 components: Available services, Settings viewer, 3D renderer and
 Workbench. The user should be able to interact with the sizing/position
 of those components. A Results viewer was also implemented for the React
-and qooxdoo prototypes.
-- **3D renderer**: The 3D viewer shows an interactive object. Three.js,
-the most popular JavaScript library that uses WebGL, was used for all
+and [qooxdoo] prototypes.
+- **3D renderer**: The 3D viewer shows an interactive object. [three.js],
+the most popular JavaScript library that uses [WebGL], was used for all
 four prototypes.
 - **Workbench**: The workbench shows how the different computational
 services are connected to form a pipeline.
@@ -36,7 +35,7 @@ style should be switchable.
 client-side, but the heaviest logic stays on the server side. Thus, the
 client needs to communicate with the server. E.g., when the web
 application is started, it needs to ask the server what are the available
-services. For vue, react and qooxdoo, the web socket socket.io module was
+services. For vue, [react] and [qooxdoo] , the web socket socket.io module was
 used.
 
 ### [vue]
@@ -45,11 +44,11 @@ used.
 
 - **Interactive layout**
     - Not very fancy packages found for creating dynamic layouts
-    - Many Vue dedicated layouts not in a mature status
+    - Many [vue] dedicated layouts not in a mature status
     - Better to use HTML-CSS basic solutions
     - vue-splitpane module used
 - **3D renderer**
-    - Three.js library used
+    - [three.js] library used
     - Flexible and easy to use
 - **Workbench**
     - Very poor resources found to build flowcharts
@@ -84,8 +83,8 @@ to build components
     - react-rnd module used
 - **3D renderer**
     - react-three and react-three-renderer are the modules that go on top
-of Three.js
-    - react-three-renderer (not all three.js features are implemented in
+of [three.js]
+    - react-three-renderer (not all [three.js] features are implemented in
 this wrapper)
 - **Workbench**
     - Very nice packages found to represent a flowchart
@@ -116,15 +115,15 @@ communication
 - **Interactive layout**
     - qx.ui.window.Window used to make it look like a Desktop application
 - **3D renderer**
-    - Using Three.js directly
-    - Three.js related OrbitControls.js and ShaderSkin.js were also used
+    - Using [three.js] directly
+    - [three.js] related OrbitControls.js and ShaderSkin.js were also used
 for controlling the camera and adding texture to the head model
 respectively
 - **Workbench**
     - jquery-flowchart.js used
     - nodes and links can be extended to fit our needs
 - **Data binding in UI**
-    - 'json object' -> 'model' qooxdoo built-in conversion used
+    - 'json object' -> 'model' [qooxdoo] built-in conversion used
     - Similar to redux
 - **Dynamic styling**
     - Includes different themes that can be extended/customized
@@ -132,31 +131,25 @@ respectively
 - **Front-end/Back-end communication**
     - socket.io module used
 - **Extra impressions**
-    - Qooxdoo does not have a package manager (yet). Therefore, all 3rd
+    - [qooxdoo] does not have a package manager (yet). Therefore, all 3rd
 party libraries used need to be manually integrated. This has pros and
 cons, e.g. an advantage is that dependencies are more under control.
     - Since the community is smaller, fewer pre-built wrappers
 (integration of 3rd party packages) are available.
-    - On the other hand, Qooxdoo users typically need fewer 3rd parties,
+    - On the other hand, [qooxdoo] users typically need fewer 3rd parties,
 because it tries to be a complete UI framework, much like Qt in the C++
 world.
-    - Qooxdoo comes with conventions and a framework, making Javascript
+    - [qooxdoo] comes with conventions and a framework, making Javascript
 more like object-oriented languages (like C++), supporting well-
 structured code and lending itself to large web-based applications.
 
-
-### [wt]
-
-![wt-screenshot](../img/wt.png)
-
-TODO: short description review, pros, cons
 
 ## Conclusions
 
 This is a comparative table with the pre-selected frameworks and some
 key-points
 
-|                | vue          | react        |      qooxdoo |
+|                | [vue]          | [react]        |      [qooxdoo] |
 |----------------|--------------|--------------|--------------|
 |  **License**   | MIT licensed | MIT licensed | MIT licensed |
 | **Popularity** | <ul><li>Released in 2014</li><li>75000 stars in
@@ -170,7 +163,7 @@ CSS and logic nicely separated</li></ul> | <ul><li>Facebook supports it.
 One of the most popular Front-End JavaScript framework</li><li>Lot of
 dedicated and easy to install 3rd party libraries | <ul><li>Desktop-like
 web application</li><li>Object Oriented programming model</li><li>Lots of
-native 3rd party libraries available</li><li>Three.js used
+native 3rd party libraries available</li><li>[three.js] used
 directly</li><li>Complete control over dependencies |
 |    **Cons**    | <ul><li>No specific company supporting it</li><li>Not
 many dedicated 3rd party libraries available</li><li>Lack of control over
@@ -179,17 +172,17 @@ separated</li><li>Lack of control over dependencies</li></ul> |
 <ul><li>Not a big community behind</li><li>Some 3rd party libraries do
 not integrate very well</li></ul> |
 
-The main difference between vue, react and qooxdoo is that the first two
+The main difference between [vue], [react] and [qooxdoo] is that the first two
 provide very light frameworks and programming concepts with simple
-skeletons to start building on top of, while qooxdoo provides a mature
-framework with a collection of UI widgets. That means that for vue and
-react one needs to look for all the UI components that one may want to
+skeletons to start building on top of, while [qooxdoo] provides a mature
+framework with a collection of UI widgets. That means that for [vue] and
+[react] one needs to look for all the UI components that one may want to
 add and subsequently needs to install them, using the Node Package
-Manager, together with their dependencies. In qooxdoo, instead, if the
+Manager, together with their dependencies. In [qooxdoo] , instead, if the
 original framework doesn't provide the component, you need to download
 the desired package and keep it within the project.
 
-### Recommendations
+**Recommendations**
 Based on our analysis and the framework-maturity, we believe that [vue]
 should be discarded.
 We think that both [react] and [qooxdoo], could work, but taking into
@@ -197,9 +190,8 @@ account the popularity and support the community can provide, our
 recommendation is to use [react].
 
 
-
 [vue]: https://vuejs.org
 [react]: https://reactjs.org
 [qooxdoo]: http://www.qooxdoo.org
-[wt]: https://www.webtoolkit.eu/wt
-
+[WebGL]: https://www.khronos.org/webgl/
+[three.js]: https://threejs.org/

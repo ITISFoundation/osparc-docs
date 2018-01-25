@@ -1,9 +1,7 @@
 site_name: D1.1 Technical Specs. & Technology Evaluation
 repo_name: 'GitHub'
-# TODO: temporary until merged into master--
 repo_url: https://github.com/ITISFoundation/osparc-docs
 edit_uri: edit/master/docs/d1.1-report
-#--
 docs_dir: './docs/d1.1-report'
 site_description: 'Detailed technical specifications for o2S2PARC based on user requirements (e.g. from questonnaires) and technology evaluation.'
 site_author: "Foundation for Research on Information Technologies in Society (IT'IS)"
