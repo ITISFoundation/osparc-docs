@@ -1,0 +1,15 @@
+version: '3'
+services:
+  doc-generator:
+    build:
+      context: ./tools/doc-generator/
+    ports:
+      - '8000:8000'
+    volumes:
+      - '.:/usr/app'
+    image: itisfoundation/doc-generator:latest
+  compose_mkdocs:
+    image: itisfoundation/doc-generator:latest
+    volumes:
+      - '.:/usr/app'
+    command: ["python", "tools/doc-generator/compose_mkdocs.py" ]
