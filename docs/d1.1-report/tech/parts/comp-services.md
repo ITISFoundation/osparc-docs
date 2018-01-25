@@ -1,3 +1,5 @@
+
+
 ## Introduction
 
 The computational backend involves all services needed to handle the
@@ -6,7 +8,7 @@ pipeline that processes a stream of data in a sequential way. Every
 pipeline consists of multiple algorithms, each one expecting specific
 input data and providing specific output data. The pipeline can be built
 up in the frontend as a directed acyclic graph (dag) where the edges
-describe input/ouput and the nodes consist of the algorithms, i.e. the
+describe input/output and the nodes consist of the algorithms, i.e. the
 computational kernels. Such kernels include complete standalone solvers,
 algorithms to calculate specific quantities, or a viewer that renders
 data into graphs, plots or tables, etc.
@@ -26,9 +28,9 @@ respecting the inherent data dependencies
 
 ## Selection of technology for computational kernel integration
 
-Since the  a central purpose of the SIM-CORE platform is to allow users
-to add user-defined algorithms, the technology preselection was based on
-the criterion that xxx.
+Since a central purpose of the SIM-CORE platform is to allow users to add
+user-defined algorithms, the technology preselection was based on the
+criterion that xxx.
 
 Modern scientific libraries and solvers span a broad range of programming
 languages, are typically very specialized, have many dependencies to
@@ -36,27 +38,27 @@ numerical libraries, and usually are designed to work best on few,
 specific platforms. In order to ease the deployment of services
 consisting of such codes into the heterogeneous SIM-CORE platform, it is
 desirable to provide contributors with the toolsets and platforms they
-know best. This can be achieved using  containers or virtual machines.
-Due to the large overhead in terms of hardware consumption, usage of
-virtual machines has been discarded in favour of the containerized
-approach. Containers, in contrast to virtual machines, do not emulate the
-hardware but the operating system itself. This makes them much more
-lightweight and allows for up to thousands of instances running
-simultaneously on one host.
+know best. This can be achieved using containers or virtual machines. Due
+to the large overhead in terms of hardware consumption, usage of virtual
+machines has been discarded in favour of the containerized approach.
+Containers, in contrast to virtual machines, do not emulate the hardware
+but the operating system itself. This makes them much more lightweight
+and allows for up to thousands of instances running simultaneously on one
+host.
 
 There are several approaches to containerization. However docker has
-become the de-facto standard in the industry and many scientific
-applications already provide users with docker images of their code.
-Furthermore, it is possible to use the docker swarm tool that natively
-allows the  orchestration of multiple docker containers among a
-heterogeneous network of computers. Additionally, all major clouds
-providing platforms support the technology. If during the future
-evolution of the platform, more sophisticated means of orchestration are
-required, there exists the possibility of using kubernetes, which is the
-major player when it comes to managing containers and for which docker
-has recently added full support.
+become the de-facto standard in industry and academia, and many
+scientific applications already provide users with docker images of their
+code. Furthermore, it is possible to use the docker swarm tool that
+natively allows the orchestration of multiple docker containers among a
+heterogeneous network of computers. Additionally, all major cloud
+providers support the technology. If during the future evolution of the
+platform, more sophisticated means of orchestration are required, there
+exists the possibility of using kubernetes, which is the major player
+when it comes to managing containers and for which docker has recently
+added full support.
 
-The docker framework also allows  easy  functionality extention on
+The docker framework also allows  easy functionality extension on
 existing images, which will be used to enhance algorithms with an
 additional layer that makes integration into the SIM-CORE ecosystem
 possible. A specific use case will be discussed below.
@@ -79,7 +81,7 @@ information for the services. This allows to store information such as:
 
 - required input data (format)
 - output data (format)
-- specific hardware needs (gpu/multicore)
+- specific hardware needs (GPU/multicore)
 - version number and hashes for identification
 
 This data is being used to check whether two algorithms in the pipeline
@@ -111,7 +113,7 @@ database.
 **Workers**
 
 Workers are the services that perform the actual computation. They always
-appear as pairs of containers: a sidecar and a actual computational
+appear as pairs of containers: a sidecar and an actual computational
 service. The sidecar is always alive and is connected to the tasks queue.
 When required it creates a so-called one-shot container that runs the
 requested computational service. All the sidecar-computational service
@@ -127,14 +129,14 @@ knowledge of the platform.
 
 **Service Orchestration**
 
-As mentioned above SIM-CORE takes advantage of the native docker
+As mentioned above, SIM-CORE takes advantage of the native docker
 orchestration tool swarm. If more flexibility is required in the future,
 it will be possible to use kubernetes to support orchestration.
 
 
 ### Example use case
 
-TODO: Explain what is coming here. Motivation� and conclude at the end.
+TODO: Explain what is coming here. Motivation... and conclude at the end.
 
 For the sake of simplicity, consider a computational service that
 evaluates a user defined single variable function in a given interval and
@@ -147,7 +149,7 @@ an input and creates an rendered html page with a scatter plot.
 
 **Dockerfile**
 
-A dockerfile contains all commands needed to create a docker image that
+A docker-file contains all commands needed to create a docker image that
 can be run in a container. For the function evaluator, this file looks as
 follows:
 
@@ -172,7 +174,7 @@ follows:
   RUN rm *.cpp *.c *.h
 ```
 
-The image is based on a very small linux distribution called `alpine`
+The image is based on a very small Linux distribution called `alpine`
 with compilers `gcc`, shell `bash` and jason parser `jq`. In addition, to
 compile the source code into an executable called `test` the `PATH` is
 being prepended by some scripts from what is called `simcore.io`. This
@@ -199,8 +201,8 @@ understand xxx.
   ./test $arg1 $arg2 $arg3 $temp $arg5 > $LOG_FOLDER/log.dat
 ```
 In this case, the sidecar would copy the all input data needed into a
-file called 'input.json' which the above script would parse and pass to
-the test executable.  
+file called `input.json` which the above script would parse and pass to
+the test executable.
 
 After building, the docker image is deployed into the docker registry
 with the following meta data:
@@ -257,7 +259,7 @@ Finally, the descriptor for this part of the pipeline would look like
       "name": "simcore.io.registry/comp.services/function-parser",
       "tag": "1.1"
     }
-  }  
+  }
 ```
 
 The above scripts and file descriptors represents the current state and
@@ -271,8 +273,8 @@ the SIM-CORE platform (resulting in additional development effort).
 
 - By the end of 2016 Microsoft added support for docker containers on the
 Windows family of operating systems. Since docker swarm is operating
-system agnostic, the SIM-CORE platform automatically supports linux- and
-windows-based computational services.
+system agnostic, the SIM-CORE platform automatically supports Linux- and
+Windows-based computational services.
  - Shifter, a new open source project provides a runtime for container
 images and is specifically suited for HPC on supercomputer architecture.
 Among other formats it supports docker.
@@ -283,4 +285,5 @@ important, because....
 
 ### Recommendations
 
-So what?
+TODO So what?
+

@@ -1,8 +1,10 @@
+
+
 ## Prototypes
 All prototypes and proof-of-concepts created during the review process
 can be found under the [demos
 folder](https://github.com/ITISFoundation/osparc-lab/tree/master/demos)
-in the IT'IS GitHub repository. Every subfolder contains a sample program 
+in the IT'IS GitHub repository. Every subfolder contains a sample program
 that demonstrates a technology and/or a programming concept. More details
 about each case is documented in place.
 
@@ -43,5 +45,6 @@ requests to load, process and transmit the model in chunks. When the
 information reaches the client-side it is rendered using  ```three.js```.
 
 
-**NOTE**: These three demonstrations were presented live during the
+**NOTE**: These three demonstrations were presented live during the webex
 meeting with the SPARC Subject Matter Experts on December 13, 2017.
+
