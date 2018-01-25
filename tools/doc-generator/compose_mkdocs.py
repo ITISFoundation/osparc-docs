@@ -27,7 +27,7 @@ def join_parts(parts, stream=sys.stdout, basepath='.'):
                 print('\n\n=={}=='.format(key), file=stream)
                 join_parts(value, stream, basepath)
 
-def split_parts(singlefilepathk, basepath='.'):
+def split_parts(singlefilepath, basepath='.'):
     """ Splits one-file into parts and creates separate files for each-one """
     with open(singlefilepath) as fstm:
         text = fstm.read()
@@ -42,6 +42,7 @@ def split_parts(singlefilepathk, basepath='.'):
             fpath = part
             title = result[index-1]
             content = result[index+1]
+            pages.update({title: fpath})
 
             found = pattern.search(content)
             if found:
@@ -49,20 +50,22 @@ def split_parts(singlefilepathk, basepath='.'):
                 # TODO finish this
                 content = pattern.sub('', content).strip()
 
-            dirname = os.path.join(basepath, os.path.dirname(fpath))
-            if dirname and not os.path.exists(dirname):
-                os.makedirs( os.path.dirname(fpath) )
+
+            fpath = os.path.join(basepath, fpath)            
+            dirname = os.path.dirname(fpath)
+            if not os.path.exists(dirname):
+                os.makedirs( dirname )
 
             with open(fpath, 'wt') as ofstream:
                 ofstream.write(content)
 
-        pages.update({title: fpath})
-
     _LOGGER.info(pages)
 
+def split_file():
+    """ Splits single into multiple documents"""
+    split_parts('d1.1-report_v3.txt', basepath='new-docs')
 
-
-def main():
+def join_files():
     """
     Default implementation
     """
@@ -77,4 +80,5 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    #join_file()
+    split_file()
