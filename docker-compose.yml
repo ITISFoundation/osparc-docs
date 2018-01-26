@@ -1,5 +1,6 @@
 version: '2'
 services:
+  # mkdocs
   doc-generator:
     build:
       context: ./tools/doc-generator/
@@ -8,8 +9,25 @@ services:
     volumes:
       - '.:/usr/app'
     image: itisfoundation/doc-generator:latest
+  # single<->multiple pages
   compose_mkdocs:
     image: itisfoundation/doc-generator:latest
     volumes:
       - '.:/usr/app'
     command: ["python", "tools/doc-generator/compose_mkdocs.py" ]
+  # md->pdf converter
+  md2pdf:
+    build:
+      context: ./tools/md2pdf/
+    image: fiware/md2pdf:latest
+    volumes:
+      - '.:/md2pdf'
+    command:  ["-i" ,"/md2pdf/mkdocs.yml", "-o", "/md2pdf/osparc-docs.pdf"]
+  # opens notebook
+  doc-notebook:
+    build:
+      context: ./tools/doc-notebook/
+    volumes:
+      - '.:/home/usr'
+    ports:
+      - '8888:8888'
