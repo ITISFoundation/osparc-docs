@@ -182,16 +182,12 @@ Manager, together with their dependencies. In [qooxdoo] , instead, if the
 original framework doesn't provide the component, you need to download
 the desired package and keep it within the project.
 
-**Recommendations**
-Based on our analysis and the framework-maturity, we believe that [vue]
-should be discarded.
-We think that both [react] and [qooxdoo], could work, but taking into
-account the popularity and support the community can provide, our
-recommendation is to use [react].
+Based on our review we found that [qooxdoo] is the most suitable framework
+to implement SIM-CORE's front-end.
 
 
-[vue]: https://vuejs.org
 [react]: https://reactjs.org
-[qooxdoo]: http://www.qooxdoo.org
-[WebGL]: https://www.khronos.org/webgl/
 [three.js]: https://threejs.org/
+[qooxdoo]: http://www.qooxdoo.org
+[vue]: https://vuejs.org
+[WebGL]: https://www.khronos.org/webgl/
