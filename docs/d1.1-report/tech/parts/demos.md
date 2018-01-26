@@ -34,17 +34,19 @@ computational service from any direct interaction with the platform.
 
 ![image-demo3](../img/demo3.jpeg)
 This demonstration builds a web application that offers the entire
-[Sim4Life](https://www.zurichmedtech.com/sim4life/) application as a
+[Sim4Life] application as a
 service. The user can create multiple sessions and get a full anatomical
-model from the Virtual Population
-[ViP3](https://www.itis.ethz.ch/virtual-population/virtual-
-population/vip3/) rendered in the browser. To achieve this, the web
+model from the [ViP] rendered in the browser. To achieve this, the web
 server communicates with the
-[Sim4Life](https://www.zurichmedtech.com/sim4life/) service via RPC and
+[Sim4Life] service via RPC and
 requests to load, process and transmit the model in chunks. When the
-information reaches the client-side it is rendered using  ```three.js```.
+information reaches the client-side it is rendered using  [threejs].
 
 
 **NOTE**: These three demonstrations were presented live during the webex
 meeting with the SPARC Subject Matter Experts on December 13, 2017.
 
+
+[Sim4Life]: https://www.zurichmedtech.com/sim4life/
+[threejs]: https://threejs.org/
+[ViP]: https://www.itis.ethz.ch/virtual-population/virtual-population/overview/
