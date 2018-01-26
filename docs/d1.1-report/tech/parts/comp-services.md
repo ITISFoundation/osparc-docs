@@ -46,19 +46,19 @@ but the operating system itself. This makes them much more lightweight
 and allows for up to thousands of instances running simultaneously on one
 host.
 
-There are several approaches to containerization. However docker has
+There are several approaches to containerization. However [docker] has
 become the de-facto standard in industry and academia, and many
-scientific applications already provide users with docker images of their
-code. Furthermore, it is possible to use the docker swarm tool that
-natively allows the orchestration of multiple docker containers among a
+scientific applications already provide users with [docker] images of their
+code. Furthermore, it is possible to use the [docker] [swarm] tool that
+natively allows the orchestration of multiple [docker] containers among a
 heterogeneous network of computers. Additionally, all major cloud
 providers support the technology. If during the future evolution of the
 platform, more sophisticated means of orchestration are required, there
 exists the possibility of using kubernetes, which is the major player
-when it comes to managing containers and for which docker has recently
+when it comes to managing containers and for which [docker] has recently
 added full support.
 
-The docker framework also allows  easy functionality extension on
+The [docker] framework also allows  easy functionality extension on
 existing images, which will be used to enhance algorithms with an
 additional layer that makes integration into the SIM-CORE ecosystem
 possible. A specific use case will be discussed below.
@@ -69,9 +69,9 @@ possible. A specific use case will be discussed below.
 **Docker image registry**
 
 Considering the technology decision outlined above, another core
-component of the docker ecosystem is being used for the computational
-backend, namely the concept of the docker registry. Every computational
-service is provided as a docker image in a repository that is part of the
+component of the [docker] ecosystem is being used for the computational
+backend, namely the concept of the [docker] registry. Every computational
+service is provided as a [docker] image in a repository that is part of the
 SIM-CORE platform. These images are being pulled from the registry when
 required, and a container is created to run (execute) the corresponding
 service.
@@ -129,8 +129,8 @@ knowledge of the platform.
 
 **Service Orchestration**
 
-As mentioned above, SIM-CORE takes advantage of the native docker
-orchestration tool swarm. If more flexibility is required in the future,
+As mentioned above, SIM-CORE takes advantage of the native [docker]
+orchestration tool [swarm]. If more flexibility is required in the future,
 it will be possible to use kubernetes to support orchestration.
 
 
@@ -149,7 +149,7 @@ an input and creates an rendered html page with a scatter plot.
 
 **Dockerfile**
 
-A docker-file contains all commands needed to create a docker image that
+A [docker]-file contains all commands needed to create a [docker] image that
 can be run in a container. For the function evaluator, this file looks as
 follows:
 
@@ -178,7 +178,7 @@ The image is based on a very small Linux distribution called `alpine`
 with compilers `gcc`, shell `bash` and jason parser `jq`. In addition, to
 compile the source code into an executable called `test` the `PATH` is
 being prepended by some scripts from what is called `simcore.io`. This
-allows to enhance the docker command line interface (cli) by whatever is
+allows to enhance the [docker] command line interface (cli) by whatever is
 needed to run the computational service via the sidecar. In this case,
 there is a `run` command added to the cli. Xxx last sentences are hard to
 understand xxx.
@@ -204,7 +204,7 @@ In this case, the sidecar would copy the all input data needed into a
 file called `input.json` which the above script would parse and pass to
 the test executable.
 
-After building, the docker image is deployed into the docker registry
+After building, the [docker] image is deployed into the [docker] registry
 with the following meta data:
 
 ```json
@@ -269,21 +269,20 @@ computational services, or assigned to a supporting entity (e.g., IT'IS
 support within SPARC), or facilitated through increased automation within
 the SIM-CORE platform (resulting in additional development effort).
 
-### Miscellaneous
+**Miscellaneous**
 
-- By the end of 2016 Microsoft added support for docker containers on the
-Windows family of operating systems. Since docker swarm is operating
+- By the end of 2016 Microsoft added support for [docker] containers on the
+Windows family of operating systems. Since [docker] [swarm] is operating
 system agnostic, the SIM-CORE platform automatically supports Linux- and
 Windows-based computational services.
  - Shifter, a new open source project provides a runtime for container
 images and is specifically suited for HPC on supercomputer architecture.
-Among other formats it supports docker.
+Among other formats it supports [docker].
 - The MPICH application binary interface (ABI) can be used to link code
 against the ubuntu MPICH library package and change the binding at
 runtime to the host ABI compatible MPI implementation. And this is
 important, because....
 
-### Recommendations
 
-TODO So what?
-
+[docker]: https://www.docker.com
+[swarm]: https://docs.docker.com/engine/swarm/
