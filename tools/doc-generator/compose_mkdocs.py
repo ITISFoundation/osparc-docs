@@ -1,4 +1,3 @@
-
 # coding: utf-8
 """
     Helper to merge all markdown files into a single and viceversa

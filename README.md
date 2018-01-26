@@ -1,14 +1,19 @@
-# osparc-docs
+# oSPARC documentation
 Source and tools for documentation and reporting
 
-The documentation in this repo can be rendered using [mkdocs]. A pre-installation
-of all necessary tools is already available in a docker. The easies way to render
-the doc locally in a website and see the changes in the md files is
+
+The documentation in this repo is written in markup language. Currently
+we are using [markdown] and is rendered using [mkdocs].
+
+Under ```tools``` folder, we provide a docker with [mkdocs] pre-installed to render
+all [markdown] into an html. Just
 ```bash
   docker-compose build
   docker-compose up doc-generator
   # open localhost:8000 in browser
 ```
+Any further changes in the doc files will automatically trigger an updated of
+the website.
 
 Alternatively, you can build and run the container using directly docker
 ```bash
@@ -21,6 +26,15 @@ docker build -t itisfoundation/doc-generator -f tools/doc-generator/Dockerfile .
 docker run -it -v $(pwd):/usr/app -p 8000:8000 itisfoundation/doc-generator:latest
 ```
 
-**NOTE**: the content of this repository started as a doc folder in [osparc-lab repo](https://github.com/ITISFoundation/osparc-lab).
 
+
+
+
+
+
+**NOTE**: the content of this repository was originally within a doc folder in [osparc-lab repo](https://github.com/ITISFoundation/osparc-lab). The git history was
+[moved](http://gbayer.com/development/moving-files-from-one-git-repository-to-another-preserving-history/) into this repository.
+
+[MarkDown]: https://daringfireball.net/projects/markdown/syntax#philosophy
+[markdown]: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 [mkdocs]: http://www.mkdocs.org
