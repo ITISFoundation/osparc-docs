@@ -51,7 +51,7 @@ def split_parts(singlefilepath, basepath='.'):
                 content = pattern.sub('', content).strip()
 
 
-            fpath = os.path.join(basepath, fpath)            
+            fpath = os.path.join(basepath, fpath)
             dirname = os.path.dirname(fpath)
             if not os.path.exists(dirname):
                 os.makedirs( dirname )
@@ -72,7 +72,7 @@ def join_files():
     mkdocs = yaml.load(open('mkdocs.yml').read())
     # mkdocs.keys()
 
-    output_filename = os.path.basename( mkdocs.get('docs_dir', 'reportff') ) + '.txt'
+    output_filename = os.path.basename( mkdocs.get('docs_dir', 'report') ) + '.txt'
     _LOGGER.info('Creating %s ...', output_filename)
 
     with open(output_filename, 'wt', encoding="utf8") as fstrm:
@@ -80,5 +80,5 @@ def join_files():
 
 
 if __name__ == '__main__':
-    #join_file()
-    split_file()
+    join_files()
+    #split_file()
