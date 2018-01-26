@@ -51,8 +51,7 @@ which the current SIM-CORE vision might require adaptation.
 | Powley, et al.	| Webex 22/12/2017 |
 | Howard	| Washington (SfN) 10/12/2017 |
 | Grill, et al.	| Washington (DRC meeting)|
-| Horn, et al.	| Washington 16/11/2017, Webex 18/01/2018, Webex
-24/01/2018, repeated mail exchanges |
+| Horn, et al.	| Washington 16/11/2017, Webex 18/01/2018, Webex 24/01/2018, repeated mail exchanges |
 | Jenkins, et al.	| Webex 17/1/2018 |
 | Kember (Ardell group)	| Skype 14/12/2017 |
 | People at DRC PI meeting	| 15,16/11/2017 |
