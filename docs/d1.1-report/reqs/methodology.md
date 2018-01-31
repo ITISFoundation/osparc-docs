@@ -61,5 +61,5 @@ which the current SIM-CORE vision might require adaptation.
 | Lazzi	| Webex 14/12/2017 |
 | Yoshida	| Phone 1/11/2017 |
 | Pitts	| Skype 12/12/2017 |
-
+| Bolser, Morris, et al.	| Webex 17/01/2018 |
 
