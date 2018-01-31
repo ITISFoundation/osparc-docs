@@ -1,11 +1,15 @@
 
+
 Requirements and specifications have been established based on interviews
 with SPARC teams as well as based on the results of the technology
 evaluation. The requirements are very much aligned with prior
-expectations and only minor adaptation of the proposal and possibly a
-change in prioritization is suggested. The technology evaluation has
-resulted in a clear idea of the technologies and approach that should be
-applied to implement the SPARC SIM-CORE platform. The design of the
+expectations and only minor adaptation of the proposal and a
+change in prioritization is suggested (see [Executive Summary](index.md)). The technology
+evaluation has
+resulted in a clear idea of the technologies and the approach that should be
+applied to implement the SPARC SIM-CORE platform (see both, the [High Level Platform
+Functionality Specifications](specs/high-level.md), as well as the [Framework Architecture Specifications](specs/low-level.md)). 
+The design of the
 platform will enable maximal flexibility with regard to the wide variety
 of existing and envisioned user-generated modeling services. It will also
 offer user-friendly interfaces, allowing users to engage on different
