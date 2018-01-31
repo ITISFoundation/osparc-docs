@@ -1,16 +1,17 @@
 
+
 ## Communication and Interoperability
 
 In order to achieve interoperability among different services, both
-within the SIM-CORE platform (e.g. among computational services) and
+within the SIM-CORE platform (e.g., among computational services) and
 outside (e.g., with other SPARC-CORE services), a stable and maintainable
 communication model is required.
 This interprocess communication (IPC) can be established using different
 technologies.
-Services can communicate synchronously with a request/response model
+Services can communicate synchronously using a request/response model
 (REST, [Apache Thrift]), or they can use asynchronous message-based
-communication mechanisms as the Advanced Message Queuing Protocol (AMQP).
-For this review we focused on three different technologies:
+communication mechanisms, such as the Advanced Message Queuing Protocol (AMQP).
+For our review, we focused on three different technologies:
 
 - RESTful
 - RPC with [Apache Thrift]
@@ -38,9 +39,9 @@ represented using a URL.
 
 ## RPC [Apache Thrift]
 
-A framework that supports multiple language for clients and servers by
+A framework that supports multiple languages for clients and servers by
 using a compiler that auto generates code from interface definitions.
-Supports C++, Java, Python, Node.js, ..., and is developed by facebook.
+Supports C++, Java, Python, Node.js, etc. and is developed by facebook.
 
 ***Pros***
 
@@ -72,7 +73,7 @@ simultaneously
 - More parts in the system (broker)
 - More work needs to be done for request/response interaction
 (identification system for messages)
-- If broker dies, system breaks down
+- If the broker dies, the system breaks down
 
 ## Conclusions
 
@@ -80,7 +81,7 @@ All above mentioned technologies have characteristics that satisfy the
 communication needs for different parts of the SIM-CORE platform.
 Our choice is the RESTful APIs for the backend-director communication as
 well as for communication with the other COREs.
-For the computational backend the use of messaging for job distribution
+For the computational backend, the use of messaging for job distribution
 and REST/RPC for communication with computational services is foreseen.
 
 
