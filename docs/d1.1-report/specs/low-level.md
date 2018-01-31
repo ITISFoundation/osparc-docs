@@ -27,3 +27,11 @@ stories are successively implemented in the development process, and if necessar
 above described technological approaches will be adapted. Special attention will have to be
 paid to the orchestration of computational services and the responsiveness of the web-UI
 when large CAD models are manipulated or transmitted.
+
+
+[apache-thrift]: https://thrift.apache.org/
+[docker]: https://www.docker.com
+[flask]: http://flask.pocoo.org/
+[qooxdoo]: http://www.qooxdoo.org
+[swarm]: https://docs.docker.com/engine/swarm/
+[qooxdoo]: http://www.qooxdoo.org
