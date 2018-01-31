@@ -169,8 +169,9 @@ Manager, together with their (poorly controllable) dependencies. In [qooxdoo], i
 original framework does not provide a component, you need to download
 the desired package and integrate it within the project.
 
-Based on our review, we found that [qooxdoo] is the most suitable framework
-to implement the SIM-CORE's front-end.
+Based on our review, we found that, taking into account that it is easier to build
+desktop-like applications and the native Object Oriented programming model, [qooxdoo]
+is the most suitable framework to implement SIM-CORE's front-end.
 
 
 [react]: https://reactjs.org
