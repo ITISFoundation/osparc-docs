@@ -15,8 +15,7 @@ Tried several tools to convert from mkdocs to pandoc and then to pdf but found s
  - ~~[mkdocs-pandoc]~~ fails upon execution with ```TypeError: _split_row() takes exactly 2 arguments (3 given)```!?
  - ~~[mkdocs-combine]~~ is a fork of [mkdocs-pandoc] but does not process correctly mkdocs.yml pages hierarchy. It produces a pandoc file with only the uppermost sections.
 
-
-
+ 
 
  [markdown]: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
  [md2pdf]: https://github.com/Fiware/tools.Md2pdf

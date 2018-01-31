@@ -1,19 +1,18 @@
 \pagenumbering{gobble}
-![cover image](itis_header.pdf)
+![cover image](cover_img.png)
 
 \begin{center}
-Private Public Partnership Project (PPP)
+SIM-CORE Framework
 \end{center}
+
 \begin{center}
-Large-scale Integrated Project (IP)  
+National Institute of Heath (NIH)  
 \end{center}
 
 
 
 
 \pagenumbering{gobble}
-![IT'IS logo](https://avatars2.githubusercontent.com/u/32800832?s=200&v=4)
-![logo](https://www.itis.ethz.ch/themes/speag/images/logo.png)
 
 
 # <title>

@@ -102,3 +102,4 @@ ENV/
 
 # mac cache
 .DS_Store
+*.pdf
