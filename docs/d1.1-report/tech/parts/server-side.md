@@ -122,8 +122,8 @@ new built-in modules in python 3 like [asyncio] or brand new frameworks such as
 
 - As all lightweight and unopinionated frameworks, the responsibility to add
 standard features (via 3rd party or in-house modules) heavily depends
-on the dev-team with the consequent risk of accumulating [technical
-debt](https://en.wikipedia.org/wiki/Technical_debt) as the codebase grows.
+on the dev-team with the consequent risk of accumulating
+[technical debt](https://en.wikipedia.org/wiki/Technical_debt) as the codebase grows.
 
 
 ## Conclusions
