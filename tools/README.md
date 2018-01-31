@@ -1,7 +1,4 @@
 # Doc Tools
-[![Documentation Status](https://readthedocs.org/projects/osparc-docs/badge/?version=latest)](http://osparc-docs.readthedocs.io/en/latest/?badge=latest)
-
-
  A collection of tools to build, format, compose, convert, ... documentation
  written in a markup language, e.g. [markdown] or [reStructuredText] text.
 

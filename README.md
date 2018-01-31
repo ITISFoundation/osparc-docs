@@ -1,6 +1,7 @@
 # oSPARC documentation
-Source and tools for documentation and reporting
+[![Documentation Status](https://readthedocs.org/projects/osparc-docs/badge/?version=latest)](http://osparc-docs.readthedocs.io/en/latest/?badge=latest)
 
+Source and tools for documentation and reporting
 
 The documentation in this repo is written in markup language. Currently
 we are using [markdown] and is rendered using [mkdocs].
