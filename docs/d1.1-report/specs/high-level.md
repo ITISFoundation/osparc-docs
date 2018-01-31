@@ -1,9 +1,12 @@
 
+
 - **User Interface**: The user interface shall primarily be a browser-
 based GUI. It shall be user-friendly and interactive. It shall support
 interface elements that permit setting parameters and properties,
 visualizing 3D scenes, displaying data (tables, plots, trees, image-data,
-etc.) and messages, setting up and displaying work-flows ("workbench"),
+etc.) and messages, setting up and displaying work-flows and complex 
+dependencies/influences/coupling ("workbench", interaction graph with possibility of 
+assigning properties to nodes and connections),
 monitoring and administering computational resources, as well as
 accessing and managing data (local data and data in the DAT-CORE). With
 lower priority and/or at a later stage, the user interface should also
@@ -11,33 +14,31 @@ offer a scripting interface (Python-based). Through the GUI, users shall
 be able to access data and models (including search functionality),
 manage access rights, set up studies and workflows, execute and monitor
 services locally and in the cloud, as well as perform analysis and post-
-processing. Xxx workbench/flowchart editor xxx
+processing.
 - **Services Infrastructure**: Service environments that make it easy to
 run Python scripts, to run executables (Unix-based operating systems,
 such as Linux, are currently the only platforms used by contacted SPARC
 teams developing their own solvers/executables) that take parameters from
 the command line or standardized input file formats, to compile and
-execute C, C++, and Java code, to execute R scripts, and xxx shall be
+execute C, C++, and Java code, and to execute R scripts shall be
 provided. It shall be easy for users to register new services by using
 one of the predefined service environments and inserting their
 executables/code/... and it must be simple to specify the required input
 parameters such that they are exposed through the online GUI. By
 providing information about the generated output, it shall be possible to
 present the output using standardized viewers (plots, 3D views, slice
-field views, isosurface views...). It shall be possible to link services
+field views, isosurface views, etc.). It shall be possible to link services
 with compatible outputs and inputs into pipelines. Advanced users shall
 have the possibility of creating services that manage dedicated sections
 of the online GUI, allowing them superior control also over visualization
 and interaction. When executing a service, all the information required
-to reproduce the execution (input data, parameters, version of service...)
+to reproduce the execution (input data, parameters, version of service, etc.)
 shall be stored, to facilitate reproduction.
 - **Specialized Services**: A range of commonly required services shall
 be provided. On the physics solver side, this includes primarily
-electromagnetic exposure. Typically, the most required variant of
-electromagnetic solver is an electroquasistatic solver (for exposure
-through electrodes) xxx with support for anisotropic electrical
-conductivity (to handle the important impact of anisotropic neural
-tissue) xxx. Another relevant electromagnetic solver is the
+EM exposure. Typically, the most required variant of
+EM solver is an electroquasistatic solver (for exposure
+through electrodes). Another relevant EM solver is the
 magnetoquasistatic solver (for exposure by coils and loops). Selected
 teams will also require acoustic propagation, biomechanics, optics, and
 tissue damage solvers (not all of these can be provided by IT'IS). The
@@ -50,7 +51,7 @@ model, and shall be assignable along user-defined trajectories. There is
 large request for an unmyelinated fiber model, but it is currently
 unclear, which model is suitable. It shall also be possible to load and
 simulate complex neuron models, defined as .hoc files. It must be
-possible to couple electromagnetic exposure conditions with
+possible to couple EM exposure conditions with
 electrophysiological neuron models. Metamodeling services that can vary
 parameters of services or pipelines to perform optimization tasks, assess
 sensitivity, propagate uncertainty, and perform model order reduction
@@ -71,9 +72,9 @@ latency and bandwidth. This shall include iterative coupling and
 bidirectional coupling. A service allowing (ontological) annotation of
 anatomical and physiological models will be provided by the MAP-CORE.
 - **Models**: The platform shall offer anatomical models of humans (man
-and woman) and rat. We choose a rat because rats were most popular in the
-vote conducted via Slack, and because it is anticipated that imaging rats
-and identifying selected peripheral nerves will be easier for rats than
+and woman) and a rat. We choose a rat because rats were most popular in the
+vote conducted via Slack, and because it is anticipated that imaging
+and identifying selected peripheral nerves will be easier in rats than in
 mice, because of their size, resulting in superior model quality. Further
 animal models that shall be considered at a later point include mice,
 cats and a monkey. The anatomical models shall be pre-functionalized with
