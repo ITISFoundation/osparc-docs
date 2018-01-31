@@ -1,10 +1,11 @@
 
+
 ## Pre-selection of technologies
 
 The technology evaluation started with a pre-selection of technologies
-(i.e. libraries, framework, toolkits, models, ...) for the different
+(i.e., libraries, framework, toolkits, models, etc.) for the different
 components of the SIM-CORE platform, namely the front-end (client-side),
-the web back-end (server-side), the communication models and the
+the web back-end (server-side), the communication models, and the
 computational services.
 
 The technology evaluation was mostly conducted by four experienced senior
@@ -12,7 +13,7 @@ developers, with additional input from open-source, full-stack
 development, software quality management, and software (development)
 management experts.
 
-The criteria used for the pre-selection consisted mainly of three
+The criteria used for the pre-selection consisted primarily of three
 factors:
 
 - **Completeness**: the selected framework must include functions or
@@ -23,10 +24,10 @@ functionality expected for the server-side.
 - **Sustainability**: the selected technology should be long-term
 maintainable as an open-source project. Key measures of sustainability
 considered here are its popularity, the support of the developers
-community (i.e., documentation, fixes, releases, ...), and the license
+community (i.e., documentation, fixes, releases, etc.), and the license
 terms.
 - **Productivity**: we believe that high productivity can be achieved
-with the right combination of a suitable framework (e.g. complete, easy-
+with the right combination of a suitable framework (e.g., complete, easy-
 to-use, and sustainable) and the effectiveness of reusing existing
 functionality and previous experience of the SIM-CORE team with specific
 technologies. For that reason, the pre-selection should incorporate
@@ -46,8 +47,8 @@ lab/tree/master/demos). Among all demos, there are three
 [prototypes](parts/demos.md) that combine different technologies within
 the full-stack and cover realistic scenarios expected in the final
 platform. The specifics of each review are documented in place, next to
-its correspond demo. Nonetheless, for the sake of clarity, in this
-document we provide a summarized version of each review and the final
-recommendations.
+its correspond demo. Nonetheless, for the sake of clarity, 
+we provide a summarized version of each review and the final
+recommendations in this document.
 
 

@@ -1,12 +1,13 @@
 
 
+
 ## Prototypes
 All prototypes and proof-of-concepts created during the review process
 can be found under the [demos
 folder](https://github.com/ITISFoundation/osparc-lab/tree/master/demos)
 in the IT'IS GitHub repository. Every subfolder contains a sample program
 that demonstrates a technology and/or a programming concept. More details
-about each case is documented in place.
+about each case are documented in place.
 
 ## Demonstrators
 In order to demonstrate the different technologies in a wider context, we
@@ -20,7 +21,7 @@ different reviewed technologies and the server-side demonstrates
 different frameworks to serve these apps. All three front-ends include a
 3D viewer, a workbench to schedule task pipelines, a dynamic display of
 the settings for a given computational service (embedded in service meta-
-data) and several viewers for results (e.g. 2D plots, tables, etc).
+data), and several viewers for results (e.g., 2D plots, tables).
 
 ![image-demo2](../img/demo2.jpeg)
 This prototype demonstrates the orchestration and execution of
@@ -40,7 +41,7 @@ model from the [ViP] rendered in the browser. To achieve this, the web
 server communicates with the
 [Sim4Life] service via RPC and
 requests to load, process and transmit the model in chunks. When the
-information reaches the client-side it is rendered using  [threejs].
+information reaches the client-side it is rendered using [threejs].
 
 
 **NOTE**: These three demonstrations were presented live during the webex
@@ -50,3 +51,4 @@ meeting with the SPARC Subject Matter Experts on December 13, 2017.
 [Sim4Life]: https://www.zurichmedtech.com/sim4life/
 [threejs]: https://threejs.org/
 [ViP]: https://www.itis.ethz.ch/virtual-population/virtual-population/overview/
+
