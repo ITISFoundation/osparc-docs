@@ -16,7 +16,7 @@ all [markdown] into an html. Just
 Any further changes in the doc files will automatically trigger an updated of
 the website.
 
-Alternatively, you can build and run the container using directly docker
+Alternatively, you can build and run the container using directly docker:
 ```bash
 # pull
 docker pull itisfoundation/doc-generator:latest
