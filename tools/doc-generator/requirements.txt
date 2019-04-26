@@ -2,7 +2,7 @@ certifi==2017.11.5
 click==6.7
 CommonMark==0.5.4
 docutils==0.14
-Jinja2==2.10
+Jinja2>=2.10.1 # https://nvd.nist.gov/vuln/detail/CVE-2019-10906 
 livereload==2.5.1
 Markdown==2.6.10
 MarkupSafe==1.0
