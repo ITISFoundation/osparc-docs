@@ -3,6 +3,9 @@ This document provides a detailed update on Deliverable D1.1 "Detailed technical
 specifications for o2S2PARC, based on user requirements (e.g., from questionnaires) and 
 technology evaluation" of the IT'IS SIM-CORE proposal.
 
+
+some changes
+
 The specifications for the SIM-CORE platform (o2S2PARC) were established through two 
 separate activities: (i) contacting SPARC teams to establish their specific modeling needs 
 (primarily by detailed interviews) and (ii) evaluating the best suited software technologies for 
