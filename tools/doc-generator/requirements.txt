@@ -6,7 +6,7 @@ Jinja2>=2.10.1 # https://nvd.nist.gov/vuln/detail/CVE-2019-10906
 livereload==2.5.1
 Markdown==2.6.10
 MarkupSafe==1.0
-mkdocs==0.17.2
+mkdocs==1.2.3
 recommonmark==0.4.0
 six==1.11.0
 tornado==4.5.2
