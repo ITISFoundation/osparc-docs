@@ -1,4 +1,4 @@
-certifi==2022.12.7
+certifi==2023.7.22
 click==6.7
 CommonMark==0.5.4
 docutils==0.14
